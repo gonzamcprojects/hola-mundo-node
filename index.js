@@ -6,12 +6,12 @@ function obtenerMensaje() {
 }
 
 function obtenerhora() {
-  const ahora = newDate(); //Date()
+  const ahora = newDate(); // Date()
   return ahora.toLocaleString("es-PE", { timeZone: "America/Lima" ));
 }
 
 app.get("/", (req, res) => {
-  res.send(`$(obtenerMensaje()<br>Hora actual: $(obtenerHora()}`);
+  res.send(`$(obtenerMensaje()}<br>Hora actual: $(obtenerHora()}`);
 });
 
 app.get("/health", (req, res) => res.status(200).send("ok"));
