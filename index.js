@@ -5,7 +5,7 @@ function obtenerMensaje() {
   return "¡Hola Mundo desde Node.js en la nube!";
 }
 
-function obtenerhora() {
+function obtenerHora() {
   const ahora = new Date(); // Date()
   return ahora.toLocaleString("es-PE", { timeZone: "America/Lima" });
 }
