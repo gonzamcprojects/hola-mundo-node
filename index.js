@@ -5,6 +5,11 @@ function obtenerMensaje() {
   return "¡Hola Mundo desde Node.js en la nube!";
 }
 
+function obtenerhora() {
+  const ahora = newDate(); //Date()
+  return ahora.toLocaleString("es-PE", { timeZone: "America/Lima" ));
+}
+
 app.get("/", (req, res) => {
   res.send(obtenerMensaje());
 });
